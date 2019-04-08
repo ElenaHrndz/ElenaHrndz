@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+h1{
+  margin-top: 0;
+  color: #FFF7C0;
+  font-family: 'Merienda', cursive;
+  font-size: 3.5rem;
+}
+
+h2{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  color: #19655D;
+}
+
+h3{
+  font-family: 'Ubuntu', sans-serif;
+  color: #5A0052;
+}
+
+ /************ class***************/
+.top-container{
+  background-color: #A4FFF5;
+  position: relative;
+  padding-top: 100px;
+}
+
+ .middle-container{
+background-color: #FEE0FB;
+ }
+
+.bottom-container{
+background-color: #BEFCF5;
+}
+
+.artist{
+  text-decoration: underline;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.botton-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+
+/* http://paletton.com/#uid=33f160kwi++bu++hX++++rd++kX */
