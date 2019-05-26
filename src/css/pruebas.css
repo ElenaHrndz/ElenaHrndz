@@ -1,11 +1,3 @@
-/* colores
-#002154
-#41709c
-#8eb8de
-#bbdcef
-#efefef
-*/
-
 .responsive-banner {
   display: inline-block;
   margin: 50px;
@@ -17,16 +9,16 @@
   max-height: 450px;
   border-radius: 10px;
   overflow: hidden;
-	background-image: linear-gradient(to bottom right, #bbdcef, #41709c);
+	background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
 	background-repeat: no-repeat;
   text-align: left;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .responsive-banner.second {
-  background-image: linear-gradient(to bottom right, #bbdcef, #41709c);
+  background-image: linear-gradient(to bottom right, #F4C28E, #E67163);
 }
 .responsive-banner.third {
-  background-image: linear-gradient(to bottom right, #bbdcef, #41709c);
+  background-image: linear-gradient(to bottom right, #589FE5, #74DAC4);
 }
 .container-envelope {
   max-width: calc(100%);
@@ -104,11 +96,12 @@ a.more-link {
 a.more-link:hover {
   background-color: rgba(255, 255, 255, 0.50);
 }
-svg, .imgProyects {
+svg, img {
   fill: rgba(0, 0, 0, 0.1);
   position: absolute;
 }
 img {
+  max-width : 50%;
 }
 .cirle-a {
   bottom: -80px;
@@ -126,11 +119,9 @@ img {
   top: 195px;
       right: 145px;
 }
-
-.imgProyects {
+img {
   top: 0;
   right: 0;
-  max-width : 50%;
 }
 
 body {
@@ -162,71 +153,3 @@ h1 {
   font-weight: 400;
   letter-spacing: 1px;
 }
-
-
-
-
-
-/* body {
-  background-color: #efefef;
-  margin: 0;
-  text-align: center;
-  font-family: 'Signika Negative', sans-serif;
-}
-
-h1 {
-  margin-top: 0;
-  color: #002154;
-  font-family: 'Merienda', cursive;
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2.5rem;
-  color: #41709c;
-}
-
-h3 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #8eb8de;
-} */
-
-/************ class***************/
-/* .footer {
-  font-family: 'Ubuntu', sans-se;
-  font-size: .8rem;
-}
-
-.top{
-  font-weight: bold;
-  opacity: .6;
-}
-
-.top-container {
-;
-}
-
-.middle-container {
-/* background-color: #8eb8de;
-}
-
-.bottom-container {
-background-color: #bbdcef;
-}
-
-.artist {
-  text-decoration: underline;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.botton-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-} */
