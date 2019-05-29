@@ -63,10 +63,10 @@ h3 {
   display: inline-block;
   margin: 35px;
   width: 80%;
-  max-width: 560px;
+  max-width: 650px;
   min-width: 320px;
   position: relative;
-  min-height: 340px;
+  min-height: 400px;
   max-height: 450px;
   border-radius: 10px;
   overflow: hidden;
@@ -166,7 +166,7 @@ svg, .imgProyects {
 }
 
 .img{
-  width: 12%;
+  width: 10%;
   margin: 1%;
 }
 
