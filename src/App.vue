@@ -32,16 +32,16 @@
         :particleOpacity="0.7"
         linesColor="#002154"
         :particlesNumber="80"
-        shapeType="circle"
+        shapeType="star"
         :particleSize="4"
         :linesWidth="2"
-        :lineLinked="true"
+        :lineLinked="false"
         :lineOpacity="0.4"
         :linesDistance="150"
-        :moveSpeed="3"
+        :moveSpeed="7"
         :hoverEffect="true"
-        hoverMode="grab"
-        :clickEffect="true"
+        hoverMode="repulse"
+        :clickEffect="false"
         clickMode="push"
       >
       </vue-particles>
@@ -73,8 +73,8 @@ export default {
         },
         {
           icon: 'fas fa-folder-open',
-          title: 'Proyects',
-          link: '/proyects'
+          title: 'Projects',
+          link: '/projects'
         },
         {
           icon: 'fas fa-user-cog',

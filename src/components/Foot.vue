@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'foot',
-  data() {
+  data () {
     return {
       msg: 'This is footer!!!'
     }

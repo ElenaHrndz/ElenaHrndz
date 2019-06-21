@@ -18,10 +18,10 @@ export default new Router({
       import('../components/User/AboutMe.vue')
     },
     {
-      path: '/proyects',
-      name: 'proyects',
+      path: '/projects',
+      name: 'projects',
       component: () =>
-      import('../components/User/Proyects.vue')
+      import('../components/User/Projects.vue')
     },
     {
       path: '/skills',
