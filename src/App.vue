@@ -35,7 +35,7 @@
         shapeType="star"
         :particleSize="4"
         :linesWidth="2"
-        :lineLinked="false"
+        :lineLinked="true"
         :lineOpacity="0.4"
         :linesDistance="150"
         :moveSpeed="7"
