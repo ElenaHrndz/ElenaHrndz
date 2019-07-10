@@ -15,7 +15,12 @@
       <transition-group class="projects" name="projects" >
         <div class="project" v-if="currentFilter === project.category || currentFilter === 'ALL'" v-bind:key="project.title" v-for="project in projects">
           <div class="project-image-wrapper">
-            <img class="project-image" v-bind:src="project.image">
+            <div v-if="project.isImage">
+              <img class="project-image" v-bind:src="project.image">
+            </div>
+            <div v-else>
+              <iframe class="project-image" v-bind:src="project.image"></iframe>
+            </div>
             <div class="gradient-overlay"></div>
             <div class="circle">
               <span class="project-title">{{project.title}}</span>
@@ -24,9 +29,12 @@
           <div class="">
             <p>{{ project.text }}</p>
           </div>
-          <div class="">
-            <v-btn flat>Code</v-btn>
-            <v-btn flat>WEB</v-btn>
+          <div v-if="project.isDownload">
+            <v-btn flat v-on:click.native="goToWeb(project.download)">Download</v-btn>
+          </div>
+          <div v-else>
+            <v-btn flat v-on:click.native="goToWeb(project.code)">Code</v-btn>
+            <v-btn flat v-on:click.native="goToWeb(project.web)">WEB</v-btn>
           </div>
         </div>
       </transition-group>
@@ -39,19 +47,22 @@ export default {
     return {
       currentFilter: 'ALL',
       projects: [
-        {title: 'Encrypt', image: '/static/images/Encrypt.png', text:'On Encrypt you can codify your messages to keep them on secret.' ,category: 'WEB'},
-        {title: 'Edulab', image: '/static/images/Edulab.png', text:'Educativ Social Network used to promote the student-teacher communication and also to allow the knowles between students', category: 'WEB'},
+        {title: 'Encrypt', image: '/static/images/Encrypt.png', text: 'On Encrypt you can codify your messages to keep them on secret.', category: 'WEB', isImage:true, isDownload:false, web: 'https://elenahrndz.github.io/Encrypt/src/', code:' https://github.com/ElenaHrndz/Encrypt'},
+        {title: 'Edulab', image: '/static/images/Edulab.png', text: 'Educativ Social Network used to promote the student-teacher communication and also to allow the knowles between students', category: 'WEB', isImage:true, isDownload:false, web: 'https://elenahrndz.github.io/Red-Social/src/', code: 'https://github.com/ElenaHrndz/Red-Social'},
         // {title: 'Pokeworld', image: '/static/images/pokeworld.png', text:'', category: 'WEB'},
-        {title: 'mdlinks-finder', image: '/static/images/mdlinks-finder.png', text:'mdlink-finder is a library of npm that proves links on .md files to verify the status and the amount of them.', category: 'NODE'},
-        {title: 'Food Marathon', img: 'https://www.youtube.com/embed/JfRaFqmBzew', text:'A really exciting running game with 16 levels and infinite mode.', category: 'DESIGN'},
+        {title: 'mdlinks-finder', image: '/static/images/mdlinks-finder.png', text: 'mdlink-finder is a library of npm that proves links on .md files to verify the status and the amount of them.', category: 'NODE', isImage:true, isDownload:false, web: 'https://www.npmjs.com/package/mdlinks-finder', code: 'https://github.com/ElenaHrndz/mdlinks-finder'},
+        {title: 'Food Marathon', image: 'https://www.youtube.com/embed/JfRaFqmBzew', text: 'A really exciting running game with 16 levels and infinite mode.', category: 'DESIGN', isImage:false, isDownload:true, download: 'https://play.google.com/store/apps/details?id=com.andoid.FoodRun'},
         // {title: 'Injured People', image: '/static/images/InjuredPeople.png', text:'', category: 'WEB'},
-        {title: 'Jungle Jam', image: 'https://img.itch.zone/aW1nLzIwNTc2NzAucG5n/original/69Ibep.png', text:'Jungle Jam it is a game made for the Social Game Jam, Its for 3 to 6 players, it is a party game like where you are a monkey that had to collect coins the first one to collect the number of coins that you establish won there are three mini-games', category: 'DESIGN'}
+        {title: 'Jungle Jam', image: 'https://img.itch.zone/aW1nLzIwNTc2NzAucG5n/original/69Ibep.png', text: 'Jungle Jam it is a game made for the Social Game Jam, Its for 3 to 6 players, it is a party game like where you are a monkey that had to collect coins the first one to collect the number of coins that you establish won there are three mini-games', category: 'DESIGN', isDownload:true, isImage:true, download: 'https://barricagames.itch.io/junglejam'}
       ]
     }
   },
   methods: {
     setFilter (filter) {
       this.currentFilter = filter
+    },
+    goToWeb(web){
+      window.open(web, '_blank');
     }
   }
 }
@@ -59,12 +70,12 @@ export default {
 
 <style lang="css" scoped>
 
-
 p{
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #fafafa;
   color: black;
   text-transform: capitalize;
+  font-size: 18px;
 }
 
  #app{
