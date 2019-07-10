@@ -47,13 +47,13 @@ export default {
     return {
       currentFilter: 'ALL',
       projects: [
-        {title: 'Encrypt', image: '/static/images/Encrypt.png', text: 'On Encrypt you can codify your messages to keep them on secret.', category: 'WEB', isImage:true, isDownload:false, web: 'https://elenahrndz.github.io/Encrypt/src/', code:' https://github.com/ElenaHrndz/Encrypt'},
-        {title: 'Edulab', image: '/static/images/Edulab.png', text: 'Educativ Social Network used to promote the student-teacher communication and also to allow the knowles between students', category: 'WEB', isImage:true, isDownload:false, web: 'https://elenahrndz.github.io/Red-Social/src/', code: 'https://github.com/ElenaHrndz/Red-Social'},
+        {title: 'Encrypt', image: '/static/images/Encrypt.png', text: 'On Encrypt you can codify your messages to keep them on secret.', category: 'WEB', isImage: true, isDownload: false, web: 'https://elenahrndz.github.io/Encrypt/src/', code: ' https://github.com/ElenaHrndz/Encrypt'},
+        {title: 'Edulab', image: '/static/images/Edulab.png', text: 'Educativ Social Network used to promote the student-teacher communication and also to allow the knowles between students', category: 'WEB', isImage: true, isDownload: false, web: 'https://elenahrndz.github.io/Red-Social/src/', code: 'https://github.com/ElenaHrndz/Red-Social'},
         // {title: 'Pokeworld', image: '/static/images/pokeworld.png', text:'', category: 'WEB'},
-        {title: 'mdlinks-finder', image: '/static/images/mdlinks-finder.png', text: 'mdlink-finder is a library of npm that proves links on .md files to verify the status and the amount of them.', category: 'NODE', isImage:true, isDownload:false, web: 'https://www.npmjs.com/package/mdlinks-finder', code: 'https://github.com/ElenaHrndz/mdlinks-finder'},
-        {title: 'Food Marathon', image: 'https://www.youtube.com/embed/JfRaFqmBzew', text: 'A really exciting running game with 16 levels and infinite mode.', category: 'DESIGN', isImage:false, isDownload:true, download: 'https://play.google.com/store/apps/details?id=com.andoid.FoodRun'},
+        {title: 'mdlinks-finder', image: '/static/images/mdlinks-finder.png', text: 'mdlink-finder is a library of npm that proves links on .md files to verify the status and the amount of them.', category: 'NODE', isImage: true, isDownload: false, web: 'https://www.npmjs.com/package/mdlinks-finder', code: 'https://github.com/ElenaHrndz/mdlinks-finder'},
+        {title: 'Food Marathon', image: 'https://www.youtube.com/embed/JfRaFqmBzew', text: 'A really exciting running game with 16 levels and infinite mode.', category: 'DESIGN', isImage: false, isDownload: true, download: 'https://play.google.com/store/apps/details?id=com.andoid.FoodRun'},
         // {title: 'Injured People', image: '/static/images/InjuredPeople.png', text:'', category: 'WEB'},
-        {title: 'Jungle Jam', image: 'https://img.itch.zone/aW1nLzIwNTc2NzAucG5n/original/69Ibep.png', text: 'Jungle Jam it is a game made for the Social Game Jam, Its for 3 to 6 players, it is a party game like where you are a monkey that had to collect coins the first one to collect the number of coins that you establish won there are three mini-games', category: 'DESIGN', isDownload:true, isImage:true, download: 'https://barricagames.itch.io/junglejam'}
+        {title: 'Jungle Jam', image: 'https://img.itch.zone/aW1nLzIwNTc2NzAucG5n/original/69Ibep.png', text: 'Jungle Jam it is a game made for the Social Game Jam, Its for 3 to 6 players, it is a party game like where you are a monkey that had to collect coins the first one to collect the number of coins that you establish won there are three mini-games', category: 'DESIGN', isDownload: true, isImage: true, download: 'https://barricagames.itch.io/junglejam'}
       ]
     }
   },
@@ -61,8 +61,8 @@ export default {
     setFilter (filter) {
       this.currentFilter = filter
     },
-    goToWeb(web){
-      window.open(web, '_blank');
+    goToWeb (web) {
+      window.open(web, '_blank')
     }
   }
 }
