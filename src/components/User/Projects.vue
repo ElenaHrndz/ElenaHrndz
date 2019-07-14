@@ -79,8 +79,9 @@ p{
 }
 
  #app{
-   z-index: 999;
+   z-index: 5;
  }
+ 
 html,body {
   margin:0;
   font-family: 'Dawning of a New Day', cursive;

@@ -17,13 +17,17 @@
           <h2>Tech</h2>
           <h3>Web</h3>
           <div class="web">
-            <h4>• JavaScript • HTML5 • CSS3 • Node • bootstrap</h4>
+            <h4>• JavaScript • HTML5 • CSS3 • Vue • Node • bootstrap</h4>
             <img class="img" src="../../assets/images/logos/js.png" alt="javaScript">
             <img class="img" src="../../assets/images/logos/HTML.png" alt="HTML">
             <img class="img" src="../../assets/images/logos/css.png" alt="CSS">
             <img class="img" src="../../assets/images/logos/vue.png" alt="Vue">
             <img class="img" src="../../assets/images/logos/node.png" alt="Node">
             <img class="img" src="../../assets/images/logos/bootsrap.png" alt="bootsrap">
+          </div>
+          <div class="web">
+            <h4>• Flutter</h4>
+            <img class="img" src="../../assets/images/logos/flutter.png" alt="flutter">
           </div>
           <h3>Design</h3>
           <div class="desing">
@@ -41,7 +45,7 @@
             <img class="img" src="../../assets/images/logos/gitkraken.png" alt="gitkraken">
             <img class="img" src="../../assets/images/logos/git.png" alt="GitHub">
           </div>
-          <h3>Oters</h3>
+          <h3>Others</h3>
           <div class="">
             <h4>• Firebase • PowerShell</h4>
             <img class="img" src="../../assets/images/logos/firebase.png" alt="Firebase">
