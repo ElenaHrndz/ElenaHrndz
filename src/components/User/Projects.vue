@@ -2,7 +2,7 @@
   <div id="app">
       <div class="title-container">
         <div>
-          <h3 class="title">Projects</h3>
+          <h2>Projects</h2>
         </div>
         <div class="filters">
           <span class="filter" v-bind:class="{ active: currentFilter === 'ALL' }" v-on:click="setFilter('ALL')">ALL</span>
@@ -22,14 +22,11 @@
             <div v-else>
               <iframe class="project-image" v-bind:src="project.image" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="gradient-overlay"></div>
-            <div class="circle">
-              <span class="project-title">{{project.title}}</span>
-            </div>
+            <h2 class="project-title">{{project.title}}</h2>
           </div>
           <div class="">
             <p>{{ project.category }}</p>
-            <p>{{ project.text }}</p>
+            <p class="text">{{ project.text }}</p>
           </div>
           <div v-if="project.isDownload">
             <v-btn flat v-on:click.native="goToWeb(project.download)">Download</v-btn>
@@ -78,11 +75,10 @@ export default {
 
 html,body {
   margin:0;
-  font-family: 'Dawning of a New Day', cursive;
 }
 
 p{
-  margin: 25px;
+  margin: 10px;
   background-color: #fafafa;
   color: black;
   text-transform: capitalize;
@@ -94,20 +90,19 @@ p{
 }
 
 .title-container {
+  margin: 25px;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
 }
 
-.title {
-  font-family: 'Dawning of a New Day', cursive;
-  font-size:30pt;
-  font-weight:normal;
+.text{
+  margin: 5px 25px;
 }
 
 .project-title {
-  font-size:16pt
+  font-size:16pt;
 }
 
 .filter {
@@ -151,8 +146,6 @@ p{
 
 .circle {
   text-align:center;
-  position:absolute;
-  bottom:-38px;
   left:40px;
   width:100px;
   height:100px;
@@ -168,12 +161,13 @@ p{
   transition: all .35s ease-in-out;
   margin:10px;
   box-shadow:0px 2px 8px lightgrey;
-  border-radius:3px;
+  border-radius:10px;
   width:300px;
   height:480px;
   display:flex;
   flex-direction:column;
   align-items:center;
+  background-color: #fafafa;
 }
 
 .project-image-wrapper {
@@ -181,7 +175,6 @@ p{
 }
 
 .gradient-overlay {
-  position:absolute;
   top:0;
   left:0;
   width:100%;

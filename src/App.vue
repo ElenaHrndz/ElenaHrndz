@@ -147,6 +147,10 @@ h3 {
   color: #8eb8de;
 }
 
+h4{
+  font-size: 20px;
+}
+
 .footer-links {
   display: inline-block;
 }
