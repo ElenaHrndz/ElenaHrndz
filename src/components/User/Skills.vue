@@ -25,6 +25,7 @@
             <img class="img" src="../../assets/images/logos/node.png" alt="Node">
             <img class="img" src="../../assets/images/logos/bootsrap.png" alt="bootsrap">
           </div>
+          <h3>Mobile</h3>
           <div class="web">
             <h4>• Flutter</h4>
             <img class="img" src="../../assets/images/logos/flutter.png" alt="flutter">
