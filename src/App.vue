@@ -91,6 +91,10 @@ export default {
 <style>
 @import "https://fonts.googleapis.com/css?family=Merienda|Signika+Negative|Ubuntu";
 
+.fa-bars{
+  font-size: x-large;
+}
+
 .wrap-banner {
   position: relative;
   -ms-flex-align: center;
